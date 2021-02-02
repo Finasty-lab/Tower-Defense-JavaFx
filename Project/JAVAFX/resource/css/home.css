@@ -1,0 +1,29 @@
+#playBtn {
+    -fx-background-color: #ff2052;
+    -fx-background-radius: 20;
+    -fx-border-color: black;
+    -fx-border-radius: 18;
+    -fx-border-width: 2;
+    -fx-pref-height: 47.0;
+    -fx-pref-width: 134.0;
+}
+
+#tempsTxt {
+    -fx-pref-height: 25.0;
+    -fx-pref-width: 161.0;
+    -fx-alignment: center;
+}
+ImageView {
+    -fx-fit-to-height: 400px;
+    -fx-fit-to-width: 640px;
+}
+
+Vbox {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}
+
+AnchorPane {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="souchon.game.controller.LvlMenuController"
+            fx:id="lvlMenuAnchor">
+
+    <VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+      <children>
+        <AnchorPane VBox.vgrow="ALWAYS" fx:id="anchor2">
+             <children>
+                <ImageView pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="/images/HomePage.png" />
+                   </image>
+                </ImageView>
+                <Button fx:id="Lvl1Btn" disable="true" layoutX="200.0" layoutY="139.0" mnemonicParsing="false" text="Niveau 1" onAction="#startLvl"/>
+                <Button fx:id="Lvl3Btn" disable="true" layoutX="200.0" layoutY="299.0" mnemonicParsing="false" text="Niveau 3" onAction="#startLvl"/>
+                <Button fx:id="Lvl2Btn" disable="true" layoutX="200.0" layoutY="220.0" mnemonicParsing="false" text="Niveau 2" onAction="#startLvl"/>
+             </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,41 @@
+#gameAnchor {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}
+
+VBox {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}
+
+#anchor2 {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}
+
+#tempsTxt {
+    -fx-stroke-width: 0.0;
+    -fx-stroke-type: OUTSIDE;
+}
+
+#pane3 {
+    -fx-background-color: #4e4e4e;
+    -fx-pref-height: 79.0;
+    -fx-pref-width: 600.0;
+}
+
+.lvlTower {
+    -fx-pref-height: 61.0;
+    -fx-pref-width: 61.0;
+}
+
+.endGameBtn {
+    -fx-pref-height: 65.0;
+    -fx-pref-width: 129.0;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: black;
+    -fx-border-radius: 4;
+    -fx-border-width: 2;
+    -fx-font-size: 15;
+}

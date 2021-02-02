@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: souchon.game.Main
+Class-Path: src.zip javafx.web.jar javafx.base.jar javafx.fxml.jar javaf
+ x.media.jar javafx.swing.jar javafx.controls.jar javafx.graphics.jar ja
+ vafx-swt.jar javafx.web.jar javafx.base.jar javafx.fxml.jar javafx.medi
+ a.jar javafx.swing.jar javafx.controls.jar javafx.graphics.jar json-sim
+ ple-1.1.1.jar
+

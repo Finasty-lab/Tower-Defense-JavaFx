@@ -1,0 +1,24 @@
+#lvlMenuAnchor {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}
+
+Vbox {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}
+
+anchor2 {
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 600.0;
+}
+
+ImageView {
+    -fx-fit-to-height: 400px;
+    -fx-fit-to-width: 640px;
+}
+
+Button {
+    -fx-pref-height: 61.0;
+    -fx-pref-width: 200.0;
+}

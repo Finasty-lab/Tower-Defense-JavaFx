@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="souchon.game.controller.GameController"
+            onMouseClicked="#leftClick"
+            fx:id="gameAnchor">
+
+    <ImageView fx:id="carteURL">
+        <Image url="/images/Carte2.png"/>
+    </ImageView>
+
+
+    <VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <AnchorPane VBox.vgrow="ALWAYS" fx:id="anchor2">
+            <Pane fx:id="pane1"/>
+
+            <Pane fx:id="pane2" />
+
+            <GridPane prefHeight="400.0" prefWidth="600.0" gridLinesVisible="true" fx:id="gridPane1">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="CENTER"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" valignment="CENTER"/>
+                </rowConstraints>
+            </GridPane>
+            <Text layoutX="563.0" layoutY="27.0" fx:id="tempsTxt"/>
+            <Pane layoutY="321.0" fx:id="pane3">
+                <children>
+                    <Button layoutX="186.0" layoutY="9.0" mnemonicParsing="false" onAction="#selectTower" fx:id="lvl1" styleClass="lvlTower">
+                        <graphic>
+                            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" fx:id="imgv1"/>
+                        </graphic>
+                    </Button>
+                    <Button layoutX="266.0" layoutY="9.0" mnemonicParsing="false" onAction="#selectTower" fx:id="lvl2" styleClass="lvlTower">
+                        <graphic>
+                            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" fx:id="imgv2"/>
+                        </graphic>
+                    </Button>
+                    <Button layoutX="347.0" layoutY="9.0" mnemonicParsing="false" onAction="#selectTower" fx:id="lvl3" styleClass="lvlTower">
+                        <graphic>
+                            <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true" fx:id="imgv3"/>
+                        </graphic>
+                    </Button>
+                </children>
+            </Pane>
+            <Text layoutX="37.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="38.0" fx:id="goldTxt" text="0"/>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="/images/gold.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="83.0" layoutX="517.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true" fx:id="base">
+                <image>
+                    <Image url="/images/Base.png" />
+                </image>
+            </ImageView>
+            <ImageView visible="false" fx:id="gameOverTxt">
+                <Image url="/images/GameOver.png"/>
+            </ImageView>
+            <ImageView visible="false" fx:id="victoryScreen">
+                <Image url="/images/VictoryScreen.png"/>
+            </ImageView>
+            <Button layoutX="123.0" layoutY="200.0" mnemonicParsing="false" text="TRY AGAIN" visible="false" fx:id="tryAgain" onAction="#tryAgain" styleClass="endGameBtn"/>
+            <Button layoutX="337.0" layoutY="200.0" mnemonicParsing="false" text="BACK HOME" visible="false" fx:id="backHome" onAction="#backHome" styleClass="endGameBtn"/>
+        </AnchorPane>
+    </VBox>
+</AnchorPane>
